@@ -8,4 +8,8 @@ Dolce Gelato é uma Landing page de uma deliciosa sorveteria que visa proporcion
 * BOOTSTRAP: Designs Modernos e construção dinâmica da página.
 
 # Projeto
+Segue abaixo a imagem completa do Site:
+
+![Imagem Da Landing page em desktop](https://github.com/ryanmirandadev/DOLCE-GELATO/blob/main/site/Modelo%20Desktop.jpeg)
+
 Segue o link do projeto completo: https://ryanmirandadev.github.io/DOLCE-GELATO/
