@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bubblegum+Sans&family=Luckiest+Guy&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.content{
+    width: 100%;
+    max-width: 2000px;
+    margin: auto;
+}
+
+.banner{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/banner-sorvete.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-titulo{
+    font-size: 4.5rem;
+    font-family: 'Bubblegum Sans', sans-serif;
+    color: white;
+}
+
+.text-banner{
+    font-size: 1.5em;
+    font-family: 'Bubblegum Sans', sans-serif;
+    color: white;
+}
+
+.produtos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 0 0 50px 0;
+    background-color: #391B0D;
+}
+
+.produtos-titulo{
+    margin: 60px;
+    color: white;
+    font-family:'Raleway', sans-serif;
+}
+
+.cardapio{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px;
+}
+
+.card-body{
+    text-align: center;
+    background-color: #FEDEBE;
+    font-family:'Raleway', sans-serif;
+}
+
+.bi-heart-fill:hover{
+    color: red;
+    transition: ease 0.6s;
+}
+
+.card-title{
+    color: #030101;
+}
+
+img.card-img-top:nth-last-of-type(1){
+    height: 220px;
+}
+
+.btn-custom{
+    background-color: #5B2612 !important;
+    color: white !important;
+}
+
+.btn-custom:hover{
+    background-color: #391B0D !important;
+}
+
+.sobre{
+    min-height: 600px;
+    height: auto;
+    background-color: #FEDEBE;
+    display: flex;
+}
+
+.sobre-content{
+    height: auto;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    font-family:'Raleway', sans-serif;
+    
+}
+
+.sobre-img{
+    width: 400px;
+    height: 400px;
+}
+
+.sobre-img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+.sobre-text{
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sobre-text>h1{
+    color: #030101;
+}
+
+.sobre-text>p{
+    font-size: 1em;
+}
+
+.sobre-text>h1>span{
+    font-family: 'Bubblegum Sans', sans-serif; 
+    color: #391B0D;
+}
+
+.sobre-action{
+    text-decoration: none;
+    width: 120px;
+    text-align: center;
+    padding: 10px;
+    color: #391B0D;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    border: 1px solid #391B0D ;
+    background-color: none;
+    border-radius: 8px;
+}
+
+.sobre-action:hover{
+    background-color: #391B0D;
+    color: white;
+    transition: ease-in-out 0.5s;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #4E1C06;
+    color: white;
+}
+
+footer>p{
+    margin: 0 auto;
+}
+
+
+@media (max-width: 1048px){
+    .cardapio{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+    }
+
+    .sobre-content{
+        flex-direction: column;
+        height: auto;
+        padding: 25px;
+    }
+
+    .sobre-img{
+        width: 100%;
+        height: 400px;
+    }
+    
+}
+
+@media (max-width: 768px){
+    .banner-titulo{
+        font-size: 3.5rem;
+    }
+
+    .cardapio{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+
+    .sobre-img{
+        width: 100%;
+    }
+    
+}
